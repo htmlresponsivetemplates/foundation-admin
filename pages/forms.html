@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Foundation admin</title>
+<meta charset="UTF-8">
+<!-- Main CSS -->
+<link href="../css/styles.css" rel="stylesheet">
+<!-- Foundation CSS -->
+<link href="../bower_components/foundation-sites/dist/foundation.min.css" rel="stylesheet">
+<!-- Font-awesome -->
+<link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<h1>Foundation admin</h1>
+
+<div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+    <i class="fa fa-search" aria-hidden="true" type="button" data-toggle></i>
+    <div class="title-bar-title">Search</div>
+</div>
+
+<div class="top-bar" id="example-menu">
+    <div class="top-bar-right">
+        <ul class="menu">
+            <li><input type="search" placeholder="Search"></li>
+            <li><button type="button" class="button">Search</button></li>
+        </ul>
+    </div>
+</div>
+
+<div id="sidebar">
+    <h4>Manage center</h4>
+    <ul class="manage-menu text-center">
+        <!--<li><a ui-sref="admin.main"><i class="fa fa-home"></i></a></li>-->
+        <li><a href="../dashboard.html"><i class="fa fa-home"></i></a></li>
+                <ul class="dropdown menu" data-dropdown-menu data-options="disableHover:true;clickOpen:true">
+            <li>
+            <a href="#"><i class="fa fa-bell" aria-hidden="true"></i></a>
+                <ul class="menu">
+                <li><a href="buttons.html">Buttons</a></li>
+                <li><a href="forms.html">Forms</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="tables.html">Tables</a></li>
+                </ul>
+            </li>
+        </ul>
+        <li><a href="manage.html"><i class="fa fa-key"></i></a></li>
+        <li><a href="add.html"><i class="fa fa-calendar-plus-o" aria-hidden="true"></i></a></li>
+        <li><a href="item-details.html"><i class="fa fa-cube" aria-hidden="true"></i></a></li>
+        <li class="cart-msg">
+            <div class="row">
+                <div class="small-6 columns">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    <span class="warning badge">B</span>
+                </div>
+                <div class="small-6 columns">
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    <span class="warning badge">B</span>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+
+
+
+
+<section class="manage-wrapper components">
+    <!--<button class="warning large button sidebar-toggle" role="button"><i class="fa fa-bell-o "></i></button>-->
+    <h2>Forms</h2>
+    <section id="inputs">
+        <div class="row">
+        <h4>Inputs</h4>     
+        <form>
+            <div class="row">
+                <div class="medium-6 columns">
+                <label>Input Label
+                    <input type="text" placeholder=".medium-6.columns">
+                </label>
+                </div>
+                <div class="medium-6 columns">
+                    <label>
+                    How many puppies?
+                    <input type="number" value="100">
+                    </label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="medium-6 columns">
+                    <input type="file" id="exampleFileUpload" class="show-for-sr">
+                    <label>Multiple Select Menu
+                    <select multiple>
+                        <option value="showboat">Showboat</option>
+                        <option value="redwing">Redwing</option>
+                        <option value="narcho">Narcho</option>
+                        <option value="hardball">Hardball</option>
+                    </select>
+                    </label>
+                    <label>
+                        What books did you read over summer break?
+                    <textarea placeholder="None"></textarea>
+                    </label>
+                </div>
+                <div class="medium-6 columns">
+                    <label>Select Menu
+                    <select>
+                        <option value="husker">Husker</option>
+                        <option value="starbuck">Starbuck</option>
+                        <option value="hotdog">Hot Dog</option>
+                        <option value="apollo">Apollo</option>
+                    </select>
+                    <label>Disabled input
+                            <input type="text" placeholder=".medium-6.columns" disabled>
+                    </label>
+                    </label>
+                    <form>
+                    <div class="row">
+                        <div class="small-3 columns">
+                        <label for="middle-label" class="text-right middle">Label</label>
+                        </div>
+                        <div class="small-9 columns">
+                        <input type="text" id="middle-label" placeholder="Right- and middle-aligned text input">
+                        </div>
+                    </div>
+                    </form>
+                    <label for="exampleFileUpload" class="button">Upload File</label>
+                </div>
+            </div>
+        </form>
+        </div>
+    </section>
+    <div class="row">
+        <div class="large-12 columns">
+    <section id="inline-label-buttons">
+        <h4>Inline Labels and Buttons</h4>
+            <div class="input-group">
+            <span class="input-group-label">$</span>
+            <input class="input-group-field" type="number">
+            <div class="input-group-button">
+                <input type="submit" class="button" value="Submit">
+            </div>
+        </div>
+    </section>
+        </div>
+    </div>
+</section>
+
+<!-- jQuery -->
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Foundation JS -->
+<script src="../bower_components/foundation-sites/dist/foundation.min.js"></script>
+<!-- Foundation-morris JS -->
+<script src="../bower_components/foundation-sites/js/foundation.morris.min.js"></script>
+<!-- Foundation-raphael JS -->
+ <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js"></script>
+
+<!--<script   src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/foundation/6.2.1/foundation.min.js"></script>
+ <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js"></script>
+<script src="js/morris.min.js"></script>-->
+
+
+</body>
+</html>
+
+<!--#1 problem z h2 w <article> tresc strony nie jest wysrodkowana-->
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(document).foundation();
+
+        var $win = $(window);
+        $win.scroll(function () {
+
+            if ($win.scrollTop() == 0) {
+                $('#sidebar').removeClass('top-scroll');
+
+            }
+            else {
+                $('#sidebar').addClass('top-scroll');
+            }
+        });
+
+
+    });
+</script>

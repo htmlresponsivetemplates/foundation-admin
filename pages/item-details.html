@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Foundation admin</title>
+<meta charset="UTF-8">
+<!-- Main CSS -->
+<link href="../css/styles.css" rel="stylesheet">
+<!-- Foundation CSS -->
+<link href="../bower_components/foundation-sites/dist/foundation.min.css" rel="stylesheet">
+<!-- Font-awesome -->
+<link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<h1>Foundation admin</h1>
+
+<div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+    <i class="fa fa-search" aria-hidden="true" type="button" data-toggle></i>
+    <div class="title-bar-title">Search</div>
+</div>
+
+<div class="top-bar" id="example-menu">
+    <div class="top-bar-right">
+        <ul class="menu">
+            <li><input type="search" placeholder="Search"></li>
+            <li><button type="button" class="button">Search</button></li>
+        </ul>
+    </div>
+</div>
+
+<div id="sidebar">
+    <h4>Manage center</h4>
+    <ul class="manage-menu text-center">
+        <!--<li><a ui-sref="admin.main"><i class="fa fa-home"></i></a></li>-->
+        <li><a href="../dashboard.html"><i class="fa fa-home"></i></a></li>
+                <ul class="dropdown menu" data-dropdown-menu data-options="disableHover:true;clickOpen:true">
+            <li>
+            <a href="#"><i class="fa fa-bell" aria-hidden="true"></i></a>
+                <ul class="menu">
+                <li><a href="buttons.html">Buttons</a></li>
+                <li><a href="forms.html">Forms</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="tables.html">Tables</a></li>
+                </ul>
+            </li>
+        </ul>
+        <li><a href="manage.html"><i class="fa fa-key"></i></a></li>
+        <li><a href="add.html"><i class="fa fa-calendar-plus-o" aria-hidden="true"></i></a></li>
+        <li><a href="item-details.html"><i class="fa fa-cube" aria-hidden="true"></i></a></li>
+        <li class="cart-msg">
+            <div class="row">
+                <div class="small-6 columns">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    <span class="warning badge">B</span>
+                </div>
+                <div class="small-6 columns">
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    <span class="warning badge">B</span>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+
+
+
+
+<div class="manage-wrapper">
+    <!--<button class="warning large button sidebar-toggle" role="button"><i class="fa fa-bell-o "></i></button>-->
+    <h2>Item details</h2>
+    <div class="row">
+        <div class="large-4 columns item-prv">
+            <img src="../img/sample_img.png" alt="">
+            <h4>Lorem ipsum</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur.</p>
+        </div>
+        <div class="large-8 columns">
+            <div class="callout large item-description">
+                <h4>Lorem ipsum</h4>
+                <table class="item-details-table">
+                <tr>
+                    <th>Item:</th>
+                    <td>Lorem ipsum</td>
+                </tr>
+                <tr>
+                    <th>Code:</th>
+                    <td>428102</td>
+                </tr>
+                <tr>
+                    <th>Symbol:</th>
+                    <td>28YK3D</td>
+                </tr>
+                </table>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti incidunt perferendis quae, dolorem, nostrum possimus nisi doloribus laboriosam aspernatur magni ipsa tempore! Saepe nulla aut deleniti fugiat, sed ullam quidem! Quis ut veritatis soluta eveniet doloribus quod commodi adipisci aliquid, molestiae doloremque enim odit officiis iusto rerum nesciunt esse nemo velit nam, quidem alias explicabo. Possimus, sint dolor consectetur at?
+                </p>
+                <div class="item-buttons">
+                    <button class="success large button">Buy</button>
+                    <button class="large button">Edit</button>
+                    <button class="alert large button">Remove</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- jQuery -->
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Foundation JS -->
+<script src="../bower_components/foundation-sites/dist/foundation.min.js"></script>
+<!-- Foundation-morris JS -->
+<script src="../bower_components/foundation-sites/js/foundation.morris.min.js"></script>
+<!-- Foundation-raphael JS -->
+ <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js"></script>
+
+
+</body>
+</html>
+
+<!--#1 problem z h2 w <article> tresc strony nie jest wysrodkowana-->
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(document).foundation();
+
+        var $win = $(window);
+        $win.scroll(function () {
+
+            if ($win.scrollTop() == 0) {
+                $('#sidebar').removeClass('top-scroll');
+
+            }
+            else {
+                $('#sidebar').addClass('top-scroll');
+            }
+        });
+    });
+</script>

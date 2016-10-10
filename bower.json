@@ -1,0 +1,27 @@
+{
+  "name": "htmlresponsivetemplates-foundation-admin",
+  "version": "1.0.0",
+  "homepage": "http://htmlresponsivetemplates.com/project/foundation-admin",
+  "description": "Free open-source Foundation 6 admin theme, dashboard template.",
+  "keywords": [
+    "foundation 6",
+    "theme",
+    "template",
+    "admin",
+    "dashboard"
+  ],
+  "authors": [
+    "Mateusz Jerzyk"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "bower_components",
+    "pages",
+    "dasboard.html",
+  ],
+  "dependencies": {
+    "foundation-sites": "^6.2.3",
+    "font-awesome": "fontawesome#^4.6.3"
+  }
+}

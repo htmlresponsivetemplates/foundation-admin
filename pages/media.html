@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Foundation admin</title>
+<meta charset="UTF-8">
+<!-- Main CSS -->
+<link href="../css/styles.css" rel="stylesheet">
+<!-- Foundation CSS -->
+<link href="../bower_components/foundation-sites/dist/foundation.min.css" rel="stylesheet">
+<!-- Font-awesome -->
+<link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<h1>Foundation admin</h1>
+
+<div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+    <i class="fa fa-search" aria-hidden="true" type="button" data-toggle></i>
+    <div class="title-bar-title">Search</div>
+</div>
+
+<div class="top-bar" id="example-menu">
+    <div class="top-bar-right">
+        <ul class="menu">
+            <li><input type="search" placeholder="Search"></li>
+            <li><button type="button" class="button">Search</button></li>
+        </ul>
+    </div>
+</div>
+
+<div id="sidebar">
+    <h4>Manage center</h4>
+    <ul class="manage-menu text-center">
+        <!--<li><a ui-sref="admin.main"><i class="fa fa-home"></i></a></li>-->
+        <li><a href="../dashboard.html"><i class="fa fa-home"></i></a></li>
+                <ul class="dropdown menu" data-dropdown-menu data-options="disableHover:true;clickOpen:true">
+            <li>
+            <a href="#"><i class="fa fa-bell" aria-hidden="true"></i></a>
+                <ul class="menu">
+                <li><a href="buttons.html">Buttons</a></li>
+                <li><a href="forms.html">Forms</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="tables.html">Tables</a></li>
+                </ul>
+            </li>
+        </ul>
+        <li><a href="manage.html"><i class="fa fa-key"></i></a></li>
+        <li><a href="add.html"><i class="fa fa-calendar-plus-o" aria-hidden="true"></i></a></li>
+        <li><a href="item-details.html"><i class="fa fa-cube" aria-hidden="true"></i></a></li>
+        <li class="cart-msg">
+            <div class="row">
+                <div class="small-6 columns">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    <span class="warning badge">B</span>
+                </div>
+                <div class="small-6 columns">
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    <span class="warning badge">B</span>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<section class="manage-wrapper components">
+    <!--<button class="warning large button sidebar-toggle" role="button"><i class="fa fa-bell-o "></i></button>-->
+    <h2>Media</h2>
+    <div class="row">
+        <div class="large-6 columns">
+            <section id="badges">
+                <h4>Badges</h4>
+                <span class="badge">1</span>
+                <span class="secondary badge">2</span>
+                <span class="success badge">3</span>
+                <span class="alert badge">4</span>
+                <span class="warning badge">5</span>
+            </section>
+            <section id="badges-icons">
+                <h4>Badges with icons</h4>
+                <span class="badge"><i class="fa fa-cube" aria-hidden="true"></i></span>
+                <span class="secondary badge"><i class="fa fa-cog" aria-hidden="true"></i></span>
+                <span class="success badge"><i class="fa fa-check-circle" aria-hidden="true"></i></span>
+                <span class="alert badge"><i class="fa fa-rocket" aria-hidden="true"></i></span>
+                <span class="warning badge"><i class="fa fa-magic" aria-hidden="true"></i></span>
+            </section>
+            <section id="progress-bars">
+                <h4>Progress bars</h4>
+                <div class="progress" role="progressbar" tabindex="0" aria-valuenow="25" aria-valuemin="0" aria-valuetext="25 percent" aria-valuemax="100">
+                    <div class="progress-meter" style="width: 25%"></div>
+                </div>
+                <div class="secondary progress" role="progressbar" tabindex="0" aria-valuenow="25" aria-valuemin="0" aria-valuetext="25 percent" aria-valuemax="100">
+                    <div class="progress-meter" style="width: 25%"></div>
+                </div>
+                <div class="success progress">
+                    <div class="progress-meter" style="width: 50%"></div>
+                </div>
+                <div class="warning progress">
+                    <div class="progress-meter" style="width: 50%"></div>
+                </div>
+                <div class="alert progress">
+                    <div class="progress-meter" style="width: 75%"></div>
+                </div>
+            </section>
+            <section id="tooltips">
+                <h4>Tooltips</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing <span data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="2" title="A tool used for cutting crops.">TOP</span>. Pariatur ex sequi neque eligendi, repellendus tempora sunt. Maiores praesentium molestiae nobis <span data-tooltip aria-haspopup="true" class="has-tip bottom" data-disable-hover="false" tabindex="2" title="A tool used for cutting crops.">LEFT</span> aliquid repellat, provident eaque odio in dolorem, non quibusdam!</span><span>Minima, sit, odio. Officia nam, quaerat nihil ad dolorem distinctio eligendi facere, aliquam repellendus dicta vero fugiat quidem cupiditate autem error tempore <span data-tooltip aria-haspopup="true" class="has-tip left" data-disable-hover="false" tabindex="2" title="A tool used for cutting crops.">RIGHT</span> in illum, asperiores                     <span data-tooltip aria-haspopup="true" class="has-tip left" data-disable-hover="false" tabindex="2" title="A tool used for cutting crops.">BOTTOM</span> provident repudiandae.
+                </p>
+            </section>
+        </div>
+        <div class="large-6 columns">
+            <section id="labels">
+                <h4>Labels</h4>
+                <span class="label">Primary Label</span>
+                <span class="secondary label">Secondary Label</span>
+                <span class="success label">Success Label</span>
+                <span class="alert label">Alert Label</span>
+                <span class="warning label">Warning Label</span>
+            </section>
+            <section id="labels-icons">
+                <h4>Labels with icons</h4>
+                <span class="label"><i class="fa fa-cube" aria-hidden="true"></i> Primary Label</span>
+                <span class="secondary label"><i class="fa fa-cog" aria-hidden="true"></i> Secondary Label</span>
+                <span class="success label"><i class="fa fa-check-circle" aria-hidden="true"></i>Success Label</span>
+                <span class="alert label"><i class="fa fa-rocket" aria-hidden="true"></i> Alert Label</span>
+                <span class="warning label"><i class="fa fa-magic" aria-hidden="true"></i> Warning Label</span>
+            </section>
+            <section id="thumbnails">
+                <h4>Thumbnails</h4>
+                <img class="thumbnail" src="img/sample_img.png" alt="white-lion">
+                <img class="thumbnail" src="img/sample_img.png" alt="white-lion">
+                <img class="thumbnail" src="img/sample_img.png" alt="white-lion">
+            </section>
+        </div>
+    </div>
+</section>
+
+<!-- jQuery -->
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Foundation JS -->
+<script src="../bower_components/foundation-sites/dist/foundation.min.js"></script>
+<!-- Foundation-morris JS -->
+<script src="../bower_components/foundation-sites/js/foundation.morris.min.js"></script>
+<!-- Foundation-raphael JS -->
+ <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js"></script>
+
+
+</body>
+</html>
+
+<!--#1 problem z h2 w <article> tresc strony nie jest wysrodkowana-->
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(document).foundation();
+
+        var $win = $(window);
+        $win.scroll(function () {
+
+            if ($win.scrollTop() == 0) {
+                $('#sidebar').removeClass('top-scroll');
+
+            }
+            else {
+                $('#sidebar').addClass('top-scroll');
+            }
+        });
+
+    });
+</script>

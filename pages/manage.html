@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Foundation admin</title>
+<meta charset="UTF-8">
+<!-- Main CSS -->
+<link href="../css/styles.css" rel="stylesheet">
+<!-- Foundation CSS -->
+<link href="../bower_components/foundation-sites/dist/foundation.min.css" rel="stylesheet">
+<!-- Font-awesome -->
+<link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<h1>Foundation admin</h1>
+
+<div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+    <i class="fa fa-search" aria-hidden="true" type="button" data-toggle></i>
+    <div class="title-bar-title">Search</div>
+</div>
+
+<div class="top-bar" id="example-menu">
+    <div class="top-bar-right">
+        <ul class="menu">
+            <li><input type="search" placeholder="Search"></li>
+            <li><button type="button" class="button">Search</button></li>
+        </ul>
+    </div>
+</div>
+
+<div id="sidebar">
+    <h4>Manage center</h4>
+    <ul class="manage-menu text-center">
+        <!--<li><a ui-sref="admin.main"><i class="fa fa-home"></i></a></li>-->
+        <li><a href="../dashboard.html"><i class="fa fa-home"></i></a></li>
+                <ul class="dropdown menu" data-dropdown-menu data-options="disableHover:true;clickOpen:true">
+            <li>
+            <a href="#"><i class="fa fa-bell" aria-hidden="true"></i></a>
+                <ul class="menu">
+                <li><a href="buttons.html">Buttons</a></li>
+                <li><a href="forms.html">Forms</a></li>
+                <li><a href="/media.html">Media</a></li>
+                <li><a href="tables.html">Tables</a></li>
+                </ul>
+            </li>
+        </ul>
+        <li><a href="manage.html"><i class="fa fa-key"></i></a></li>
+        <li><a href="add.html"><i class="fa fa-calendar-plus-o" aria-hidden="true"></i></a></li>
+        <li><a href="item-details.html"><i class="fa fa-cube" aria-hidden="true"></i></a></li>
+        <li class="cart-msg">
+            <div class="row">
+                <div class="small-6 columns">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    <span class="warning badge">B</span>
+                </div>
+                <div class="small-6 columns">
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    <span class="warning badge">B</span>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+
+
+
+
+<section class="manage-wrapper components">
+    <!--<button class="warning large button sidebar-toggle" role="button"><i class="fa fa-bell-o "></i></button>-->
+    <h2>Manage</h2>
+    <div class="row">
+        <div class="large-12 columns">
+            <div id="graph"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="large-12 columns">
+            <form>
+                <div class="input-group search-table">
+                <input class="input-group-field" type="search">
+                <div class="input-group-button">
+                    <button type="submit" class="warning large button">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                </div>
+                </div>
+            </form>
+            <table class="hover hide-for-small-only">
+                <thead>
+                    <tr>
+                    <th width="200"><i class="fa fa-user" aria-hidden="true"></i></th>
+                    <th><i class="fa fa-wrench" aria-hidden="true"></i></th>
+                    <th><i class="fa fa-pencil-square-o" aria-hidden="true"></i></th>
+                    <th><i class="fa fa-times" aria-hidden="true"></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td>Content Goes Here</td>
+                    <td class="switch-data">
+                        <div class="switch large">
+                            <input class="switch-input" id="yes-no" type="checkbox" name="exampleSwitch">
+                            <label class="switch-paddle" for="yes-no">
+                                <span class="switch-active" aria-hidden="true">Yes</span>
+                                <span class="switch-inactive" aria-hidden="true">No</span>
+                            </label>
+                        </div>
+                    </td>
+                    <td><a href="#" class="button">Edit</a></td>
+                    <td><a href="#" class="alert button">Remove</a></td>
+                    </tr>
+                    <tr>
+                    <td>Content Goes Here</td>
+                    <td class="switch-data">
+                        <div class="switch large">
+                            <input class="switch-input" id="yes-no2" type="checkbox" name="exampleSwitch">
+                            <label class="switch-paddle" for="yes-no2">
+                                <span class="switch-active" aria-hidden="true">Yes</span>
+                                <span class="switch-inactive" aria-hidden="true">No</span>
+                            </label>
+                        </div>
+                    </td>
+                    <td><a href="#" class="button">Edit</a></td>
+                    <td><a href="#" class="alert button">Remove</a></td>
+                    </tr>
+                    <tr>
+                    <td>Content Goes Here</td>
+                    <td class="switch-data">
+                        <div class="switch large">
+                            <input class="switch-input" id="yes-no3" type="checkbox" name="exampleSwitch">
+                            <label class="switch-paddle" for="yes-no3">
+                                <span class="switch-active" aria-hidden="true">Yes</span>
+                                <span class="switch-inactive" aria-hidden="true">No</span>
+                            </label>
+                        </div>
+                    </td>
+                    <td><a href="#" class="button">Edit</a></td>
+                    <td><a href="#" class="alert button">Remove</a></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="hover show-for-small-only sm-table">
+                <tr>
+                    <th width="200"><i class="fa fa-user" aria-hidden="true"></i></th>
+                    <td>Content Goes Here</td>
+                </tr>
+                <tr>
+                    <th><i class="fa fa-wrench" aria-hidden="true"></i></th>
+                    <td class="switch-data">
+                        <div class="switch large">
+                            <input class="switch-input" id="yes-no3" type="checkbox" name="exampleSwitch">
+                            <label class="switch-paddle" for="yes-no3">
+                                <span class="switch-active" aria-hidden="true">Yes</span>
+                                <span class="switch-inactive" aria-hidden="true">No</span>
+                            </label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th><i class="fa fa-pencil-square-o" aria-hidden="true"></i></th>
+                    <td><a href="#" class="button">Edit</a></td>
+                </tr>
+                <tr>
+                    <th><i class="fa fa-times" aria-hidden="true"></i></th>
+                    <td><a href="#" class="alert button">Remove</a></td>
+                </tr>
+                                <tr>
+                    <th width="200"><i class="fa fa-user" aria-hidden="true"></i></th>
+                    <td>Content Goes Here</td>
+                </tr>
+                <tr>
+                    <th><i class="fa fa-wrench" aria-hidden="true"></i></th>
+                    <td class="switch-data">
+                        <div class="switch large">
+                            <input class="switch-input" id="yes-no3" type="checkbox" name="exampleSwitch">
+                            <label class="switch-paddle" for="yes-no3">
+                                <span class="switch-active" aria-hidden="true">Yes</span>
+                                <span class="switch-inactive" aria-hidden="true">No</span>
+                            </label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th><i class="fa fa-pencil-square-o" aria-hidden="true"></i></th>
+                    <td><a href="#" class="button">Edit</a></td>
+                </tr>
+                <tr>
+                    <th><i class="fa fa-times" aria-hidden="true"></i></th>
+                    <td><a href="#" class="alert button">Remove</a></td>
+                </tr>
+                                <tr>
+                    <th width="200"><i class="fa fa-user" aria-hidden="true"></i></th>
+                    <td>Content Goes Here</td>
+                </tr>
+                <tr>
+                    <th><i class="fa fa-wrench" aria-hidden="true"></i></th>
+                    <td class="switch-data">
+                        <div class="switch large">
+                            <input class="switch-input" id="yes-no3" type="checkbox" name="exampleSwitch">
+                            <label class="switch-paddle" for="yes-no3">
+                                <span class="switch-active" aria-hidden="true">Yes</span>
+                                <span class="switch-inactive" aria-hidden="true">No</span>
+                            </label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th><i class="fa fa-pencil-square-o" aria-hidden="true"></i></th>
+                    <td><a href="#" class="button">Edit</a></td>
+                </tr>
+                <tr>
+                    <th><i class="fa fa-times" aria-hidden="true"></i></th>
+                    <td><a href="#" class="alert button">Remove</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- jQuery -->
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Foundation JS -->
+<script src="../bower_components/foundation-sites/dist/foundation.min.js"></script>
+<!-- Foundation-morris JS -->
+<script src="../bower_components/foundation-sites/js/foundation.morris.min.js"></script>
+<!-- Foundation-raphael JS -->
+ <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js"></script>
+
+
+</body>
+</html>
+
+<!--#1 problem z h2 w <article> tresc strony nie jest wysrodkowana-->
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(document).foundation();
+
+        var $win = $(window);
+        $win.scroll(function () {
+
+            if ($win.scrollTop() == 0) {
+                $('#sidebar').removeClass('top-scroll');
+
+            }
+            else {
+                $('#sidebar').addClass('top-scroll');
+            }
+        });
+        
+        Morris.Area({
+            element: 'graph',
+            data: [
+                {x: '2010 Q4', y: 3, z: 7},
+                {x: '2011 Q1', y: 3, z: 4},
+                {x: '2011 Q2', y: null, z: 1},
+                {x: '2011 Q3', y: 2, z: 5},
+                {x: '2011 Q4', y: 8, z: 2},
+                {x: '2012 Q1', y: 4, z: 4}
+            ],
+            xkey: 'x',
+            ykeys: ['y', 'z'],
+            labels: ['Y', 'Z']
+            }).on('click', function(i, row){
+            console.log(i, row);
+        });
+    });
+</script>

@@ -1,0 +1,382 @@
+body{
+    background-color: #fefefe;
+}
+
+h1{
+    display: none;
+}
+
+.manage-wrapper {
+    margin-left: 250px;
+    padding-left: 25px;
+    -moz-transition: margin-left ease .50s;
+    -o-transition: margin-left ease .50s;
+    -webkit-transition: margin-left ease .50s;
+    transition: margin-left ease .50s;
+}
+
+#example-menu,
+div.title-bar,
+#example-menu > .top-bar-right > ul,
+#example-menu > .top-bar-right > ul > li{
+    background-color: #232323;
+}
+
+#example-menu > .top-bar-right > ul > li > button{
+    background-color: #ffae00;
+}
+
+.title-bar .fa-search{
+    cursor: pointer;
+}
+
+#sidebar {
+    background-color: #232323;
+    position: fixed;
+    height: 100%;
+    width: 250px;
+    overflow: hidden;
+    left: 0;
+    -moz-transition: left ease .50s;
+    -o-transition: left ease .50s;
+    -webkit-transition: left ease .50s;
+    transition: left ease .50s;
+    z-index: 10;
+}
+
+#sidebar h4{
+    /*padding: 24px;*/
+    padding: 24px 0;
+    color: #ffae00;
+    font-size: 22px;
+    text-align: center;
+}
+
+.sidebar-toggle{
+    margin: 10px;
+}
+
+.sidebar-toggle:focus{
+    background-color: #ffae00;
+    outline: none;
+}
+
+/*ul.vertical li a{
+    color: #000;
+}*/
+
+ul.vertical li a .fa-user{
+    color: #000;
+}
+
+ul.vertical li a:hover
+ul.vertical li a:focus{
+    background-color: #232323;
+    color: #fff;
+}
+
+.manage-menu i{
+    font-size: 40px;
+}
+
+.manage-menu:first-child{
+    text-align: center;
+}
+
+.manage-menu .dropdown li{
+    display: block;
+}
+
+#sidebar.hide-sidebar {
+    left: -250px;
+    -moz-transition: left ease .50s;
+    -o-transition: left ease .50s;
+    -webkit-transition: left ease .50s;
+    transition: left ease .50s;
+}
+
+.manage-wrapper.hide-sidebar {
+    margin-left: 0;
+    -moz-transition: left ease .50s;
+    -o-transition: left ease .50s;
+    -webkit-transition: left ease .50s;
+    transition: left ease .50s;
+}
+
+.manage-menu{
+    padding-top: 5px;
+    list-style: none;
+    margin-left: 0;
+}
+
+.manage-menu li:hover:not(.search-wrapper){
+    background-color: rgba(0,0,0, 0.5);
+}
+
+.manage-menu a{
+    text-decoration: none;
+    color: #fefefe;
+    display: block;
+    padding: 10px;
+}
+
+.top-scroll {
+    top: 0;
+}
+
+@media (max-width: 658px){
+    #sidebar{
+        width:125px;
+    }
+    .manage-wrapper{
+        margin-left: 125px;
+    }
+}
+
+.manage-wrapper .dashboard-info h4{
+    font-size: 40px;
+}
+
+.dashboard-info h4{
+    margin-left: 18px;
+}
+
+.dashboard-msg h6{
+    text-align: center;
+    font-size: 28px;
+}
+.dashboard-cart{
+    text-align: center;
+}
+
+.dashboard-cart h6{
+    font-size: 28px;
+}
+
+.dashboard-msg,
+.dashboard-cart{
+    height: 200px;
+}
+
+.dashboard-cart .fa{
+    text-align: center;
+    font-size: 120px;
+    cursor: pointer;
+}
+
+.dashboard-cart .items-count{
+    font-size: 22px;
+}
+
+.dashboard-table img{
+    width: 90px;
+    border: none;
+}
+
+#sidebar > ul > ul > li > a{
+    padding-right: 10px;
+}
+
+#sidebar > ul > ul > li > ul{
+    width: 100%;
+    background-color: #232323;
+    color: #fff;
+}
+
+#sidebar > ul > ul > li > a{
+    color: #fff;
+}
+
+#sidebar > ul > ul > li > a:focus
+#sidebar > ul > ul > li > a:active{
+    text-decoration: none;
+    color: #fff;
+}
+
+#sidebar .manage-menu li.cart-msg{
+    padding: 10px;
+    color: #fff;
+}
+
+#sidebar .manage-menu li.cart-msg i{
+    cursor: pointer;
+}
+
+#sidebar .manage-menu li.search-wrapper{
+    padding: 10px;
+}
+
+#sidebar ul li a{
+    text-decoration: none;
+}
+
+#sidebar ul li a:hover,
+#sidebar ul li a:active{
+    color: #ffae00;
+}
+
+.manage-wrapper .search-table .fa{
+    display: inline;
+    font-size: 24px;
+}
+
+.manage-wrapper h2{
+    /*padding: 20px 0 20px 70px;*/
+    padding: 20px 0;
+}
+
+.search-table input{
+    height: 60px;
+    font-size: 32px;
+}
+
+.manage-wrapper .dashboard-table thead th{
+    text-align: center;
+}
+
+.manage-wrapper table thead th .fa{
+    font-size: 28px;
+}
+
+.manage-wrapper table{
+    text-align: center;
+}
+
+.manage-wrapper table tr th{
+    text-align: center;
+}
+
+.manage-wrapper table.sm-table .fa{
+    font-size: 24px;
+}
+
+#graph > div{
+    text-align: center;
+    padding: 10px;
+}
+
+.manage-wrapper #slcimg{
+    max-height: 300px;
+    padding-left: 70px;
+}
+
+.manage-wrapper label.button{
+    float: right;
+}
+
+.manage-wrapper section h4{
+    padding: 5px 0;
+}
+
+#fa-buttons-text button{
+    font-size: 16px;
+}
+
+#fa-buttons-text .fa{
+    font-size: 24px;
+    padding-right: 8px;
+}
+
+#fa-buttons .fa{
+    font-size: 28px;
+}
+
+#badges span,
+#badges-icons span{
+    font-size: 20px;
+}
+
+#labels span{
+    font-size: 16px;
+    padding: 10px;
+}
+
+#labels-icons span{
+    font-size: 16px;
+}
+
+#labels span:last-child,
+#labels-icons span:last-child{
+    margin-top: 8px;
+}
+
+#labels-icons .fa{
+    font-size: 18px;
+    padding: 5px;
+}
+
+#thumbnails img{
+    width: 120px;
+    margin-right: 10px;
+}
+
+#media-table img{
+    widht: 90px;
+    height: 90px;
+}
+
+.manage-wrapper .item-prv{
+    text-align: center;
+}
+
+.manage-wrapper .item-details-table th,
+.manage-wrapper .item-details-table tb{
+    float: left;
+}
+
+#media-table > table > thead > tr > th{
+    text-align: center;
+}
+
+.item-description h4{
+    text-align: center;
+    padding-bottom: 8px;
+}
+
+#sidebar > ul > ul > li > ul.is-dropdown-submenu{
+    border-left: none;
+}
+
+@media(max-width: 645px){
+    #sidebar > ul > ul > li > ul > li > a{
+        width: 100%;
+        text-align: left;
+    }
+    .dashboard-cart .fa{
+        text-align: center;
+        font-size: 60px;
+    }
+
+    .dashboard-cart .items-count{
+        font-size: 12px;
+    }
+
+    .manage-wrapper .dashboard-info h4{
+        font-size: 25px;
+    }
+
+    .dashboard-msg{
+        height: auto;
+    }
+
+    .dashboard-msg h6{
+        font-size: 18px;
+    }
+
+    div.manage-wrapper > div.callout.large.dashboard-info,
+    div.manage-wrapper div.item-description{
+        padding: 0;
+    }
+
+    .item-description p{
+        font-size: 14px;
+    }
+
+    .dashboard-msg h6 p{
+        font-size: 14px;
+    }
+
+    .item-details-table tr td{
+        padding: 0;
+    }
+}
